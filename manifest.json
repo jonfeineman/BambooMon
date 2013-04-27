@@ -1,0 +1,21 @@
+{
+  "name": "BambooMon",
+  "version": "0.5",
+  "manifest_version": 2,
+  "description": "Monitors a Bamboo Build server and generates a compact display of the current build status",
+  "background": {
+    "scripts": []
+  },
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": "images/bamboo_icon_blue.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "http://*/",
+    "notifications"
+  ],
+  "web_accessible_resources" : [
+    "images/bamboo_icon_red.png"
+  ]
+}
