@@ -81,9 +81,6 @@ function getPlans(requestURI) {
       for (var i=0; i < results.length; i++)
       {
         var planName = results[i].shortName;
-        if (planName.indexOf("Framework") == -1) {
-          planName = planName.replace("ESP2.","");
-        }
         var container = document.createElement("div");
         container.id = results[i].key;
         container.setAttribute("class","plan-container");
